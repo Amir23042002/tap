@@ -62,52 +62,36 @@ export const ProfileCard = ({ profile, className = "" }: ProfileCardProps) => {
           {profile.phone && (
             <button
               onClick={() => handleContactClick('phone', profile.phone)}
-              className="flex items-center justify-between w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors"
+              className="flex items-center justify-center w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-golden/30 hover:border-golden hover:shadow-golden-glow"
             >
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-golden" />
-                <span className="text-golden font-medium">Phone</span>
-              </div>
-              <span className="text-golden/70">{profile.phone}</span>
+              <Phone className="w-5 h-5 text-golden" />
             </button>
           )}
           
           {profile.whatsapp && (
             <button
               onClick={() => handleContactClick('whatsapp', profile.whatsapp)}
-              className="flex items-center justify-between w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors"
+              className="flex items-center justify-center w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-golden/30 hover:border-golden hover:shadow-golden-glow"
             >
-              <div className="flex items-center gap-3">
-                <MessageCircle className="w-5 h-5 text-golden" />
-                <span className="text-golden font-medium">WhatsApp</span>
-              </div>
-              <span className="text-golden/70">{profile.whatsapp}</span>
+              <MessageCircle className="w-5 h-5 text-golden" />
             </button>
           )}
           
           {profile.instagram && (
             <button
               onClick={() => handleContactClick('instagram', profile.instagram)}
-              className="flex items-center justify-between w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors"
+              className="flex items-center justify-center w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-golden/30 hover:border-golden hover:shadow-golden-glow"
             >
-              <div className="flex items-center gap-3">
-                <Instagram className="w-5 h-5 text-golden" />
-                <span className="text-golden font-medium">Instagram</span>
-              </div>
-              <span className="text-golden/70">@{profile.instagram}</span>
+              <Instagram className="w-5 h-5 text-golden" />
             </button>
           )}
           
           {profile.facebook && (
             <button
               onClick={() => handleContactClick('facebook', profile.facebook)}
-              className="flex items-center justify-between w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors"
+              className="flex items-center justify-center w-full p-3 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-all duration-300 border border-golden/30 hover:border-golden hover:shadow-golden-glow"
             >
-              <div className="flex items-center gap-3">
-                <Facebook className="w-5 h-5 text-golden" />
-                <span className="text-golden font-medium">Facebook</span>
-              </div>
-              <span className="text-golden/70">{profile.facebook}</span>
+              <Facebook className="w-5 h-5 text-golden" />
             </button>
           )}
         </div>

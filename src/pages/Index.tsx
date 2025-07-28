@@ -13,14 +13,14 @@ const Index = () => {
         <div className="space-y-6">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold text-glow-purple">OYIEE Profile</h1>
-            <p className="text-neon-cyan font-semibold">NFC-Based Digital Identity</p>
+            <p className="text-glow-golden font-semibold">NFC-Based Digital Identity</p>
             <p className="text-foreground/80 leading-relaxed">
               Tap your OYIEE T-shirt's NFC tag to access your digital profile
             </p>
           </div>
 
           <div className="space-y-4">
-            <div className="text-6xl mb-4">🏷️</div>
+            <div className="text-6xl mb-4 golden-glow">🏷️</div>
             <p className="text-sm text-muted-foreground">
               This page is accessed by scanning NFC tags embedded in official OYIEE merchandise
             </p>
@@ -32,11 +32,11 @@ const Index = () => {
             </p>
             
             <Button
-              variant="neon-cyan"
-              className="w-full"
+              variant="outline"
+              className="w-full border-golden text-golden hover:bg-golden hover:text-black transition-all duration-300 shadow-golden-glow hover:shadow-golden-glow-intense"
               onClick={() => window.open('https://instagram.com/oyieeofficial', '_blank')}
             >
-              <Instagram className="w-4 h-4" />
+              <Instagram className="w-4 h-4 text-golden" />
               Visit OYIEE Official
             </Button>
           </div>
