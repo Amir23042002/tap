@@ -36,7 +36,7 @@ export const ProfileCard = ({ profile, className = "" }: ProfileCardProps) => {
   return (
     <Card className={`card-glow p-8 text-center ${className}`}>
       <div className="space-y-6">
-        <Avatar className="w-32 h-32 mx-auto ring-2 ring-golden">
+        <Avatar className="w-32 h-32 mx-auto ring-2 ring-golden shadow-golden-glow">
           <AvatarImage src={profile.photo} alt={profile.name} />
           <AvatarFallback className="text-2xl bg-secondary text-golden">
             {profile.name.slice(0, 2).toUpperCase()}

@@ -116,6 +116,22 @@ All colors MUST be HSL.
     color: hsl(var(--golden));
   }
 
+  .shadow-golden-glow {
+    box-shadow: var(--glow-golden);
+  }
+
+  .shadow-golden-glow-intense {
+    box-shadow: var(--glow-golden-intense);
+  }
+
+  .golden-glow {
+    filter: drop-shadow(0 0 10px hsl(var(--golden)));
+  }
+
+  .border-golden {
+    border-color: hsl(var(--golden));
+  }
+
   /* Card glow effects */
   .card-glow {
     box-shadow: var(--glow-card), 0 0 0 1px hsla(280, 100%, 70%, 0.1);
