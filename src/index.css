@@ -48,6 +48,8 @@ All colors MUST be HSL.
     --glow-purple: 0 0 20px hsla(280, 100%, 70%, 0.3);
     --glow-cyan: 0 0 20px hsla(180, 100%, 60%, 0.3);
     --glow-card: 0 0 30px hsla(280, 100%, 70%, 0.1);
+    --glow-golden: 0 0 20px hsla(48, 100%, 67%, 0.5);
+    --glow-golden-intense: 0 0 30px hsla(48, 100%, 67%, 0.7);
 
     --radius: 0.5rem;
 
@@ -122,6 +124,14 @@ All colors MUST be HSL.
 
   .shadow-golden-glow-intense {
     box-shadow: var(--glow-golden-intense);
+  }
+
+  .bg-golden {
+    background-color: hsl(var(--golden));
+  }
+
+  .text-black {
+    color: #000000;
   }
 
   .golden-glow {
