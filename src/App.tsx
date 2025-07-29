@@ -11,7 +11,6 @@ import { CreateProfile } from "./pages/CreateProfile";
 import { ViewProfile } from "./pages/ViewProfile";
 import { EditProfile } from "./pages/EditProfile";
 import { InvalidPage } from "./pages/InvalidPage";
-import { ForgotPassword } from "./pages/ForgotPassword";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +28,6 @@ const App = () => (
           <Route path="/profile/:userId" element={<ViewProfile />} />
           <Route path="/edit-profile/:userId" element={<EditProfile />} />
           <Route path="/invalid" element={<InvalidPage />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -83,7 +83,6 @@ export const Auth = () => {
             </Button>
           </form>
           <div className="mt-4 text-center">
-            <div className="space-y-2">
             <button
               type="button"
               onClick={() => setIsLogin(!isLogin)}
@@ -91,18 +90,6 @@ export const Auth = () => {
             >
               {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
             </button>
-            {isLogin && (
-              <div>
-                <button
-                  type="button"
-                  onClick={() => navigate('/forgot-password')}
-                  className="text-sm text-golden hover:text-golden/80 underline"
-                >
-                  Forgot your password?
-                </button>
-              </div>
-            )}
-            </div>
           </div>
         </CardContent>
       </Card>
